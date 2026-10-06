@@ -75,6 +75,9 @@ select:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
   cursor:pointer;margin-left:auto;white-space:nowrap}
 .jeopt input{margin:0;accent-color:var(--muted)}
 .jeopt:hover{color:var(--muted)}
+/* Looks small, but the tap area is padded out to finger size (it was easy to miss on phones). */
+.jeopt{padding:10px 0 10px 12px;margin:-10px 0 -10px auto;-webkit-tap-highlight-color:transparent}
+@media (pointer:coarse){.jeopt{font-size:.76rem}.jeopt input{width:18px;height:18px}}
 .titlebar{display:flex;flex-wrap:wrap;align-items:flex-end;gap:4px 12px}
 .titlebar>div{min-width:0}
 #clear:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
